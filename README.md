@@ -25,3 +25,4 @@ public ItemList(int size) {
     current = 0;
 }
 ```
+재사용이란 단순히 소스코드를 다시 사용하는 것이 아니라 jar 파일로 해서 사용하는 것이다.
