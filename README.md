@@ -29,4 +29,12 @@ public ItemList(int size) {
 ```
 - 재사용이란 단순히 소스코드를 다시 사용하는 것이 아니라 jar 파일로 해서 사용하는 것이다.
 - 클래스 앞에 abstract 쓰면 객체화 되는 것을 막고 뼈대로만 사용 가능함.(추상화)
-- 인터페이스(Interface)는 분리되어 있는 객체를 사용할 수 있게 하는 약속이다.
+- 인터페이스(Interface)는 분리되어 있는 객체를 사용할 수 있게 하는 약속이다. 
+```
+public interface Exam {
+    int total(); // 이런 식으로 사용해야함. 왜냐 인터페이스는 데이터를 정의하는 녀석이 아니기 때문
+    // int total; 소괄호가 없으면 안됨.
+    // public int total(); public같은 접근지정자 사용 안됨.
+    // public int total() {} 중괄호 사용 안됨.
+}
+```
