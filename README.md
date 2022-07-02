@@ -38,5 +38,19 @@ public interface Exam {
     // public int total() {} 중괄호 사용 안됨.
 }
 ```
-try ~ catch문에서 catch가 여러개일경우 위에서부터 순차적으로 실행된다. try catch에서 잡는 checked 예외가 있고 runtime 에서 잡는
+try ~ catch문에서 catch가 여러개일 경우 위에서부터 순차적으로 실행된다. try catch에서 잡는 checked 예외가 있고 runtime 에서 잡는
 unchecked 예외가 있다.
+### 콜렉션
+- 데이터를 수집하고 관리해주는 객체
+- 가변길이 배열을 쓰고 싶을 때 사용하는 객체
+```
+int x = 3;
+Integer x = 3;
+```
+- 둘이 다른거임. int는 값 형식 Integer는 참조 형식. int는 3을 담는 그릇으로서의 변수이고 Integer는 박싱이 일어나고 그 박스를 참조하는 변수가 되는 것임.  Integer는 내부적으로 박싱과 언박싱 연산이 일어나기 때문에 메모리 공간이나 연산에 대한 흐름이 int보다 안좋음. Integer x = new Integer(3); 이런식으로 됨
+- 자바의 콜렉션이 있다. Set(HashSet), List(ArrayList), Map(HashMap), Queue
+- set은 중복제거용으로 사용함.
+### 제네릭
+- 제네릭이 나온 이유: 어떤 하나의 자료형으로 리스트를 만들어 놓으면 그 자료형 외의 데이터는 담을 수 없어 효율성이 떨어진다. 제네릭은 무엇이든 될 수 있는 녀석이라는 뜻.
+- 자료형식을 비워놓은 코드를 컴파일러에게 준다. 
+- 보통 <T> 라고 쓴다. T는 type의 약자(다른 이름도 사용 가능함).
