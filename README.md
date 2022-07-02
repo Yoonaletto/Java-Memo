@@ -38,3 +38,5 @@ public interface Exam {
     // public int total() {} 중괄호 사용 안됨.
 }
 ```
+try ~ catch문에서 catch가 여러개일경우 위에서부터 순차적으로 실행된다. try catch에서 잡는 checked 예외가 있고 runtime 에서 잡는
+unchecked 예외가 있다.
